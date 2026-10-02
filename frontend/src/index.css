@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#07090E] text-slate-100 font-sans antialiased;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom Sleek Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1D283E;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #26344E;
+}
+
+/* Glassmorphism Card Style */
+.glass-panel {
+  background: rgba(16, 22, 35, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-panel-hover {
+  transition: all 0.2s ease-in-out;
+}
+.glass-panel-hover:hover {
+  border-color: rgba(0, 210, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 210, 255, 0.08);
+}
+
+/* Depth Bar Shading */
+.bid-depth-bar {
+  background: linear-gradient(90deg, rgba(16, 185, 129, 0.18) 0%, rgba(16, 185, 129, 0.04) 100%);
+}
+
+.ask-depth-bar {
+  background: linear-gradient(90deg, rgba(239, 68, 68, 0.18) 0%, rgba(239, 68, 68, 0.04) 100%);
+}
+
+/* Glowing text and borders */
+.glow-cyan {
+  text-shadow: 0 0 12px rgba(0, 210, 255, 0.5);
+}
+
+.glow-green {
+  text-shadow: 0 0 12px rgba(16, 185, 129, 0.5);
+}
+
+.glow-red {
+  text-shadow: 0 0 12px rgba(239, 68, 68, 0.5);
+}
